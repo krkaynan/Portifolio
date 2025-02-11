@@ -1,6 +1,6 @@
 # Portfólio Pessoal
 
-Bem-vindo ao meu **Portfólio Pessoal**! Este site foi desenvolvido utilizando **HTML5**, **CSS3** e **JavaScript**, e tem como objetivo mostrar alguns dos meus trabalhos e projetos realizados ao longo da minha jornada como desenvolvedor web.
+Bem-vindo ao meu **Portfólio Pessoal**! Este site foi desenvolvido utilizando **HTML5**, **CSS3** e **JavaScript**, e tem como objetivo mostrar alguns dos meus trabalhos e projetos realizados ao longo da minha jornada como desenvolvedor.
 
 ## Sobre o Projeto
 
