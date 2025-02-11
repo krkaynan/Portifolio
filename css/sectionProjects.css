@@ -1,0 +1,147 @@
+/* PROJECTS =================== */
+#projects {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.519);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.082);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  position: relative;
+}
+
+#projects img.textoPortfolio {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  opacity: 0.02;
+}
+
+#projects img.looper {
+  position: absolute;
+
+  animation: rotate infinite linear 20s;
+  z-index: -1;
+  filter: brightness(0.1);
+}
+
+#projects img.looper.um {
+  bottom: 91%;
+  right: -24rem;
+}
+
+#projects img.looper.dois {
+  bottom: 45%;
+  left: -24rem;
+}
+
+#projects img.looper.tres {
+  bottom: 10%;
+  right: -24rem;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#projects header h2 {
+  line-height: 1.1;
+  color: var(--color-text);
+  font-size: 3.5rem;
+
+  margin-bottom: 1rem;
+}
+
+#projects header p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: var(--p-color);
+  font-weight: 600;
+}
+
+#projects header {
+  margin-bottom: 8rem;
+}
+
+#projects .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+#projects .image img {
+  width: 100%;
+  transition: all 200ms ease-in-out;
+  animation: move 2.5s infinite ease-in-out;
+
+  filter: drop-shadow(2px 4px 20px #1b1b1b);
+
+  margin-bottom: 4rem;
+}
+
+#projects .card.right .image img {
+  animation-delay: 500ms;
+}
+
+#projects .image img:hover {
+  cursor: pointer;
+  filter: drop-shadow(1px 3px 15px #4646469d);
+}
+
+#projects h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d8d8d8;
+
+  margin-bottom: 0.5rem;
+}
+
+#projects p {
+  font-family: "Poppins", sans-serif;
+  color: var(--p-color);
+  font-size: 1.6rem;
+}
+
+#projects .technologies {
+  margin-top: 2rem;
+}
+
+#projects .technologies ion-icon {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#projects .technologies ion-icon:nth-child(1) {
+  color: #f0db4f;
+  border-radius: 1rem;
+}
+
+#projects .technologies ion-icon:nth-child(2) {
+  color: #ec6231;
+}
+
+#projects .technologies ion-icon:nth-child(3) {
+  color: #264de4;
+}
+
+@media (min-width: 1080px) {
+  section#projects .wrapper header h2 {
+    font-size: 5rem;
+  }
+
+  section#projects .wrapper .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+    column-gap: 30rem;
+  }
+}

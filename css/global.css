@@ -1,0 +1,117 @@
+/*====  CSS Geral ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+:root {
+  font-size: 62.5%;
+  --nav-height: 7.2rem;
+
+  --primary-color: #006ddd;
+  --secondary-color: #004388;
+  --tertinary-color: #001326;
+
+  --color-text: #e4e4e4;
+  --p-color: #6e6e6e;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+/*====  Margens de responsividade ============================ */
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+
+  padding-inline: 2.4rem;
+}
+
+.wrapper-home {
+  width: min(130rem, 100%);
+  margin-inline: auto;
+
+  padding-inline: 2.4rem;
+}
+
+@media (min-width: 1080px) {
+  .wrapper {
+    width: min(110rem, 100%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: min(120rem, 100%);
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    width: min(130rem, 100%);
+  }
+
+  :root {
+    font-size: 65%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .wrapper {
+    width: min(140rem, 100%);
+  }
+}
+
+@media (min-width: 1700px) {
+  .wrapper {
+    width: min(150rem, 100%);
+  }
+}
+
+section {
+  padding-block: 10rem;
+}
+
+/*====  scrollbar ============================ */
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 1rem;
+  background-color: #333333;
+}
+
+#particles-js {
+  background-color: transparent;
+  opacity: 0.7;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  top: 0;
+}

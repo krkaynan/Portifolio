@@ -1,0 +1,125 @@
+/* competencias=================== */
+#competencias {
+  background-color: #050505;
+  overflow: hidden;
+}
+
+#competencias header h2 {
+  font-size: 3.5rem;
+  color: var(--color-text);
+  margin-bottom: 5rem;
+}
+
+#competencias .cards .card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  /* From https://css.glass */
+  background: rgba(39, 39, 39, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2rem;
+
+  min-height: 30rem;
+
+  box-shadow: 5px 5px 20px #000000;
+}
+
+#competencias .cards .card ion-icon {
+  font-size: 6rem;
+  color: var(--color-text);
+}
+
+#competencias .cards .card span {
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+
+#competencias .cards .card p {
+  font-family: "Poppins", sans-serif;
+  color: var(--p-color);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+#competenciasDesktop {
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  section#competencias {
+    display: none;
+  }
+
+  section#competenciasDesktop {
+    display: inherit;
+    overflow: hidden;
+
+    position: relative;
+  }
+
+  section#competenciasDesktop img.textoHabilidades {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    opacity: 0.02;
+  }
+
+  section#competenciasDesktop header h2 {
+    font-size: 5rem;
+    color: var(--color-text);
+    margin-bottom: 5rem;
+  }
+
+  section#competenciasDesktop .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+  section#competenciasDesktop .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    /* From https://css.glass */
+    background: rgba(61, 61, 61, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 6px 6px 30px #141414, -6px -6px 30px #0c0c0c;
+  }
+
+  section#competenciasDesktop .cards .card ion-icon {
+    font-size: 5rem;
+    color: var(--color-text);
+  }
+
+  section#competenciasDesktop .cards .card span {
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  section#competenciasDesktop .cards .card p {
+    font-family: "Poppins", sans-serif;
+    color: #6e6e6e;
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Importações de Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Configs Padrões -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Titulo da Guia -->
+    <title>Portfolio - Kaynan</title>
+
+    <!-- Imagem que fica na guia -->
+    <link rel="shortcut icon" href="./assets/1080x1080.png" type="image/x-icon" />
+
+    <!-- Importação CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <nav id="navbar">
+      <div class="nav-content">
+        <ul>
+          <li><a onclick="closeMenu()" href="#home">Home</a></li>
+          <li><a onclick="closeMenu()" href="#projects">Projetos</a></li>
+          <li><a onclick="closeMenu()" href="#competencias">Habilidades</a></li>
+          <li><a onclick="closeMenu()" href="#sobre">Sobre</a></li>
+        </ul>
+
+        <div class="social-links">
+          <a
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="in"
+            target="_blank"
+            href="https://www.linkedin.com/in/kaynanraikkonen/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="40"
+              width="40"
+            >
+              <path
+                stroke="#fff"
+                stroke-linejoin="round"
+                d="M1.5 3.5a2 2 0 1 0 4 0 2 2 0 1 0 -4 0"
+                stroke-width="1"
+              ></path>
+              <path
+                stroke="#fff"
+                stroke-linejoin="round"
+                d="M1.5 22.5v-14h4v14h-4Z"
+                clip-rule="evenodd"
+                stroke-width="1"
+              ></path>
+              <path
+                stroke="#fff"
+                stroke-linejoin="round"
+                d="M8 8.5v14h4v-6.908c0 -1.092 1 -3.092 3.895 -3.092 1.643 0 2.605 0.845 2.605 2.5v7.5h4V15c0 -1.309 -0.312 -2.937 -1.394 -4.277 -1.144 -1.417 -2.913 -2.223 -5.21 -2.223 -1.513 0 -2.835 0.615 -3.896 1.366V8.5H8Z"
+                clip-rule="evenodd"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </a>
+
+          <a
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="git"
+            target="_blank"
+            href="https://github.com/krkaynan"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="40"
+              width="40"
+            >
+              <path
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.996 1.771a10.486 10.486 0 0 0 -3.314 20.438c0.523 0.092 0.69 -0.216 0.69 -0.493 0 -0.25 0.005 -0.945 0 -1.824 -2.919 0.633 -3.522 -1.381 -3.522 -1.381a2.775 2.775 0 0 0 -1.163 -1.534c-0.952 -0.65 0.071 -0.638 0.071 -0.638a2.201 2.201 0 0 1 1.607 1.08 2.232 2.232 0 0 0 3.05 0.871c0.05 -0.53 0.285 -1.025 0.666 -1.397 -2.328 -0.266 -4.776 -1.165 -4.776 -5.184a4.055 4.055 0 0 1 1.08 -2.815 3.762 3.762 0 0 1 0.103 -2.774s0.882 -0.282 2.883 1.076a9.924 9.924 0 0 1 5.252 0c2.007 -1.357 2.881 -1.076 2.881 -1.076 0.387 0.878 0.424 1.87 0.104 2.774a4.05 4.05 0 0 1 1.079 2.816c0 4.03 -2.452 4.916 -4.789 5.174a2.487 2.487 0 0 1 0.718 1.933v2.904c0 0.28 0.17 0.59 0.702 0.488a10.487 10.487 0 0 0 -3.322 -20.438v0Z"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </a>
+
+          <a
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="ig"
+            target="_blank"
+            href="https://www.instagram.com/krkaynan?igsh=MTRqNHphbHBpcDRkZQ%3D%3D&utm_source=qr"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="40"
+              width="40"
+            >
+              <path
+                stroke="#fff"
+                stroke-linejoin="round"
+                d="M18 6.5a0.5 0.5 0 0 1 0 -1"
+                stroke-width="1"
+              ></path>
+              <path
+                stroke="#fff"
+                stroke-linejoin="round"
+                d="M18 6.5a0.5 0.5 0 0 0 0 -1"
+                stroke-width="1"
+              ></path>
+              <path
+                stroke="#fff"
+                stroke-linejoin="round"
+                d="M7 12a5 5 0 1 0 10 0 5 5 0 1 0 -10 0"
+                stroke-width="1"
+              ></path>
+              <path
+                stroke="#fff"
+                d="M16.5 1.5h-9a6 6 0 0 0 -6 6v9a6 6 0 0 0 6 6h9a6 6 0 0 0 6 -6v-9a6 6 0 0 0 -6 -6Z"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hamburger">
+        <span class="um"></span>
+        <span class="dois"></span>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="wrapper-home">
+        <div class="banner">
+          <video autoplay muted loop>
+            <source src="./assets/bg video.mp4" type="video/mp4" />
+          </video>
+
+          <div class="content">
+            <div class="text">
+              <div data-aos="fade-down-right" class="paragraphy">
+                <p>Opa! Meu nome é</p>
+              </div>
+
+              <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                KAYNAN RAIKKONEN
+              </h1>
+
+              <div class="social-links">
+                <a
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  class="in"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/kaynanraikkonen/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                  >
+                    <path
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      d="M1.5 3.5a2 2 0 1 0 4 0 2 2 0 1 0 -4 0"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      d="M1.5 22.5v-14h4v14h-4Z"
+                      clip-rule="evenodd"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      d="M8 8.5v14h4v-6.908c0 -1.092 1 -3.092 3.895 -3.092 1.643 0 2.605 0.845 2.605 2.5v7.5h4V15c0 -1.309 -0.312 -2.937 -1.394 -4.277 -1.144 -1.417 -2.913 -2.223 -5.21 -2.223 -1.513 0 -2.835 0.615 -3.896 1.366V8.5H8Z"
+                      clip-rule="evenodd"
+                      stroke-width="1"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  class="git"
+                  target="_blank"
+                  href="https://github.com/krkaynan"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="24"
+                    width="24"
+                  >
+                    <path
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.996 1.771a10.486 10.486 0 0 0 -3.314 20.438c0.523 0.092 0.69 -0.216 0.69 -0.493 0 -0.25 0.005 -0.945 0 -1.824 -2.919 0.633 -3.522 -1.381 -3.522 -1.381a2.775 2.775 0 0 0 -1.163 -1.534c-0.952 -0.65 0.071 -0.638 0.071 -0.638a2.201 2.201 0 0 1 1.607 1.08 2.232 2.232 0 0 0 3.05 0.871c0.05 -0.53 0.285 -1.025 0.666 -1.397 -2.328 -0.266 -4.776 -1.165 -4.776 -5.184a4.055 4.055 0 0 1 1.08 -2.815 3.762 3.762 0 0 1 0.103 -2.774s0.882 -0.282 2.883 1.076a9.924 9.924 0 0 1 5.252 0c2.007 -1.357 2.881 -1.076 2.881 -1.076 0.387 0.878 0.424 1.87 0.104 2.774a4.05 4.05 0 0 1 1.079 2.816c0 4.03 -2.452 4.916 -4.789 5.174a2.487 2.487 0 0 1 0.718 1.933v2.904c0 0.28 0.17 0.59 0.702 0.488a10.487 10.487 0 0 0 -3.322 -20.438v0Z"
+                      stroke-width="1"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  class="ig"
+                  target="_blank"
+                  href="https://www.instagram.com/krkaynan/?igsh=MTRqNHphbHBpcDRkZQ%3D%3D&utm_source=qr#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="24"
+                    width="24"
+                  >
+                    <path
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      d="M18 6.5a0.5 0.5 0 0 1 0 -1"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      d="M18 6.5a0.5 0.5 0 0 0 0 -1"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      stroke-linejoin="round"
+                      d="M7 12a5 5 0 1 0 10 0 5 5 0 1 0 -10 0"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      stroke="#fff"
+                      d="M16.5 1.5h-9a6 6 0 0 0 -6 6v9a6 6 0 0 0 6 6h9a6 6 0 0 0 6 -6v-9a6 6 0 0 0 -6 -6Z"
+                      stroke-width="1"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <a class="arrow" href="#projects">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="42"
+                height="42"
+                fill="#fff"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M213.66,122.34a8,8,0,0,1,0,11.32l-80,80a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,196.69l74.34-74.35A8,8,0,0,1,213.66,122.34Zm-91.32,11.32a8,8,0,0,0,11.32,0l80-80a8,8,0,0,0-11.32-11.32L128,116.69,53.66,42.34A8,8,0,0,0,42.34,53.66Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="projects">
+      <div class="wrapper">
+        <header>
+          <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            Boas-Vindas ao meu portfoliio.
+          </h2>
+          <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            clique na imagem para ser redirecionado ao site.
+          </p>
+        </header>
+
+        <div class="cards">
+          <div data-aos="fade-up-left" class="card">
+            <div class="image">
+              <a target="_blank" href="https://linkdosite.com.br/">
+                <img
+                  src="./assets/Mockups/mockup template.png"
+                  alt="mockup site"
+                />
+              </a>
+            </div>
+
+            <div class="text">
+              <h3>Empresa</h3>
+              <p>Informações do site.</p>
+            </div>
+
+            <div class="technologies">
+              <ion-icon name="logo-javascript"></ion-icon>
+              <ion-icon name="logo-html5"></ion-icon>
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+          </div>
+
+          <div data-aos="fade-up-right" class="card">
+            <div class="image">
+              <a target="_blank" href="https://linkdosite.com.br/">
+                <img
+                  src="./assets/Mockups/mockup template.png"
+                  alt="mockup site"
+                />
+              </a>
+            </div>
+
+            <div class="text">
+              <h3>Empresa</h3>
+              <p>Informações do site.</p>
+            </div>
+
+            <div class="technologies">
+              <ion-icon name="logo-javascript"></ion-icon>
+              <ion-icon name="logo-html5"></ion-icon>
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <img class="textoPortfolio" src="./assets/PORTFOLIO TEXT.png" alt="" />
+      <img class="looper um" src="./assets/LooperGroup.png" alt="" />
+      <img class="looper dois" src="./assets/LooperGroup.png" alt="" />
+      <img class="looper tres" src="./assets/LooperGroup.png" alt="" />
+    </section>
+
+    <section id="competencias">
+      <div class="wrapper">
+        <header>
+          <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            Habilidades
+          </h2>
+        </header>
+
+        <div data-aos="fade-up" class="swiper mySwiper">
+          <div class="swiper-wrapper cards">
+            <div class="swiper-slide card">
+              <ion-icon name="logo-javascript"></ion-icon>
+              <span>JavaScript</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                ut alias minima natus sint accusamus numquam vero illum
+                possimus! Eius iure ex quisquam voluptas sapiente deserunt
+                accusamus sunt alias harum.
+              </p>
+            </div>
+
+            <div class="swiper-slide card">
+              <ion-icon name="logo-html5"></ion-icon>
+              <span>HTML</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                ut alias minima natus sint accusamus numquam vero illum
+                possimus! Eius iure ex quisquam voluptas sapiente deserunt
+                accusamus sunt alias harum.
+              </p>
+            </div>
+
+            <div class="swiper-slide card">
+              <ion-icon name="logo-css3"></ion-icon>
+              <span>CSS</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                ut alias minima natus sint accusamus numquam vero illum
+                possimus! Eius iure ex quisquam voluptas sapiente deserunt
+                accusamus sunt alias harum.
+              </p>
+            </div>
+
+            <div class="swiper-slide card">
+              <ion-icon name="logo-react"></ion-icon>
+              <span>ReactJS</span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                ut alias minima natus sint accusamus numquam vero illum
+                possimus! Eius iure ex quisquam voluptas sapiente deserunt
+                accusamus sunt alias harum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="competenciasDesktop">
+      <div class="wrapper">
+        <div class="content">
+          <header>
+            <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              Habilidades
+            </h2>
+          </header>
+
+          <div class="cards">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="450"
+              data-aos-easing="ease-in-sine"
+              class="card one"
+            >
+              <ion-icon name="logo-javascript"></ion-icon>
+              <span>JavaScript</span>
+              <p>
+                JavaScript permite criar funcionalidades como formulários interativos, animações e atualizações de conteúdo em tempo real, melhorando a experiência do usuário. É uma das linguagens mais populares e indispensáveis para desenvolvedores front-end e back-end.
+              </p>
+            </div>
+
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              class="card two"
+            >
+              <ion-icon name="logo-html5"></ion-icon>
+              <span>HTML</span>
+              <p>
+                HTML permite estruturar o conteúdo da web, como textos, imagens e links, e definir como eles serão exibidos no navegador.
+                <p>É essencial para criar sites e aplicações web. Sem HTML, não seria possível criar a estrutura de páginas na internet.</p> 
+              </p>
+            </div>
+
+            <div
+              data-aos="fade-right"
+              data-aos-offset="150"
+              data-aos-easing="ease-in-sine"
+              class="card three"
+            >
+              <ion-icon name="logo-css3"></ion-icon>
+              <span>CSS</span>
+              <p>
+                Ao aprender CSS, consigo controlar o layout, cores, fontes e espaçamento dos elementos, o que torna a experiência do usuário mais agradável e intuitiva. Além disso, CSS permite criar designs responsivos, ou seja, que se ajustam a diferentes tamanhos de tela, o que é crucial no mundo atual de dispositivos móveis.
+              </p>
+            </div>
+
+            <div
+              data-aos="fade-right"
+              data-aos-offset="50"
+              data-aos-easing="ease-in-sine"
+              class="card for"
+            >
+              <ion-icon name="logo-python"></ion-icon>
+              <span>Python</span>
+              <p>
+                Python é uma linguagem versátil amplamente utilizada em diversas áreas, como desenvolvimento web, automação e análise de dados. É muito valorizada no mercado de trabalho por sua eficiência e ampla comunidade de suporte, tornando-a uma ferramenta poderosa para resolver problemas de forma rápida e eficaz.
+              </p>
+            </div>
+
+            <div
+              data-aos="fade-right"
+              data-aos-offset="50"
+              data-aos-easing="ease-in-sine"
+              class="card for"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+              <span>Git/GitHub</span>
+              <p>
+                Git e GitHub são ferramentas essenciais para o controle de versão e colaboração em projetos de desenvolvimento. Git permite gerenciar alterações no código de forma eficiente, enquanto o GitHub facilita o trabalho em equipe, permitindo o compartilhamento e versionamento de projetos.
+              </p>
+            </div>
+
+            <div
+              data-aos="fade-right"
+              data-aos-offset="50"
+              data-aos-easing="ease-in-sine"
+              class="card for"
+            >
+              <ion-icon name="file-tray-stacked"></ion-icon>
+              <span>SQL</span>
+              <p>
+                SQL é essencial para gerenciar e manipular dados de forma eficiente. É amplamente utilizado em tecnologia e negócios, sendo uma habilidade muito valorizada no mercado de trabalho. Permite acessar, modificar e organizar informações de maneira estratégica.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img class="textoHabilidades" src="./assets/HABILIDADES.png" alt="" />
+    </section>
+
+    <section id="sobre">
+      <div class="wrapper">
+        <div data-aos="fade-up-right" class="image">
+          <img src="./assets/Imagem eu.jpg" alt="Foto de Kaynan Raikkonen" />
+        </div>
+        <div class="content">
+          <header>
+            <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              Esse sou eu.
+            </h2>
+          </header>
+
+          <div class="text">
+            <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              Desenvolvedor FullStack
+            </p>
+
+            <ul>
+              <li data-aos="fade-up-left">
+                📍 São Paulo - Sp
+              </li>
+              <li data-aos="fade-up-left">
+                📚 Formado em ADM - ETEC
+              </li>
+              <li data-aos="fade-up-left">
+                📚 Aluno de desenvolvimento de sistemas - Senai
+              </li>
+              <li data-aos="fade-up-left">
+                📚 Aluno Engenharia de software - UMC
+              </li>
+              <li data-aos="fade-up-left">
+                👨‍💻 Free-Lancer / Em busca de estagio.
+              </li>
+              <li data-aos="fade-up-left">
+                💻 kaynanraikkonen@gmail.com
+              </li>
+            </ul>
+
+            <div data-aos="fade-up-left" class="button">
+              <a target="_blank" href="./assets/KAYNAN_RAIKKONEN_MARTINS_SANTOS_(1)[1]_page-0001.jpg">
+                <button>
+                  Confira meu CV <ion-icon name="enter-outline"></ion-icon>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- IOS Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Particles JS -->
+    <script src="./particles.min.js"></script>
+    <script src="./particles.js"></script>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
